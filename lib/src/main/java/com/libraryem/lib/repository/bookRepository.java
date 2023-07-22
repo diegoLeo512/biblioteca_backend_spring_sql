@@ -2,10 +2,10 @@ package com.libraryem.lib.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.libraryem.lib.model.book;
+import com.libraryem.lib.model.Book;
 
 
-public interface bookRepository extends JpaRepository<book, Long> {
+public interface BookRepository extends JpaRepository<Book, Integer> {
 
     
 }

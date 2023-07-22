@@ -2,8 +2,8 @@ package com.libraryem.lib.controller;
 
 import org.springframework.web.bind.annotation.RestController;
 
-import com.libraryem.lib.model.book;
-import com.libraryem.lib.service.bookService;
+import com.libraryem.lib.model.Book;
+import com.libraryem.lib.service.BookService;
 
 import lombok.RequiredArgsConstructor;
 
@@ -19,10 +19,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/book")
 @RequiredArgsConstructor
 public class BookController {
-     private final bookService libroService;
+     private final BookService libroService;
     @GetMapping
-    public ResponseEntity<List<book>> obtenerTodosLosLibros() {
-        List<book> libros = libroService.obtenerTodosLosLibros();
+    public ResponseEntity<List<Book>> obtenerTodosLosLibros() {
+        List<Book> libros = libroService.obtenerTodosLosLibros();
 
         return new ResponseEntity<>(libros, HttpStatus.OK);
     }

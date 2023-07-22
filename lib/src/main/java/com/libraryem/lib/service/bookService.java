@@ -5,19 +5,19 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import com.libraryem.lib.model.book;
-import com.libraryem.lib.repository.bookRepository;
+import com.libraryem.lib.model.Book;
+import com.libraryem.lib.repository.BookRepository;
 
 import lombok.RequiredArgsConstructor;
 
 
 @Service
 @RequiredArgsConstructor
-public class bookService {
+public class BookService {
 
-    private final bookRepository repository;
+    private final BookRepository repository;
 
-    public List<book> obtenerTodosLosLibros() {
+    public List<Book> obtenerTodosLosLibros() {
         return repository.findAll();
     }
     

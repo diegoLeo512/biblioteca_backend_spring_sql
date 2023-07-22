@@ -15,7 +15,7 @@ import lombok.Data;
 @Data
 @Entity
 @Table(name = "books")
-public class book {
+public class Book {
     @Id
     Integer id;
     @NotNull
