@@ -9,6 +9,16 @@
             "projectName": "lib",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-BibliotecaApplication<biblioteca>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.diegoinc.biblioteca.BibliotecaApplication",
+            "projectName": "biblioteca",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
         }
     ]
 }
